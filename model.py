@@ -21,7 +21,6 @@ def read_db():
         file.close()
     except:
         db = []
-        return db
 
     return db
 
@@ -58,8 +57,6 @@ def create_user(cpf, name, email):
     
     write_db(db)
 
-    return True
-
 def gen_email(cpf, name):
     '''Returns a tuple with three email options.'''
 
@@ -84,7 +81,6 @@ def search_user(cpf):
     for i in range(db_size):
         if cpf in db[i]:
             return db[i]
-    return None
 
 def update_user(cpf, new_name):
     '''Updates the name of a user in the db, if it exists.'''
@@ -101,8 +97,9 @@ def update_user(cpf, new_name):
     write_db(db)
 
 def delete_user(cpf):
+    '''Removes a user from the database'''
+    
     db = read_db()
-
     db_size = len(db)
 
     for i in range(db_size):
