@@ -1,4 +1,4 @@
-# iftech-net
+# IFTECH-NET
 Projeto final da disciplina de Algoritmos e Programação estruturada.
 
 ## Requisitos
