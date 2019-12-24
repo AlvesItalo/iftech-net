@@ -167,7 +167,7 @@ def list_user_view():
         print('----------------------------')
         n+=1
         
-    print(n-1, 'Usuários.')
+    print(n, 'Usuários.')
     input('Pressione <ENTER> ')
     
 
